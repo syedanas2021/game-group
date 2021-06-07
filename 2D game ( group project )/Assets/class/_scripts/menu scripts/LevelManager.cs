@@ -9,7 +9,7 @@ public class LevelManager : MonoBehaviour
     {
         Debug.Log("your Scene will be changed");
 
-        SceneManager.LoadScene("play_scene");
+        SceneManager.LoadScene("playerscene");
     }
 
     public void ChangeMenuLevel()
