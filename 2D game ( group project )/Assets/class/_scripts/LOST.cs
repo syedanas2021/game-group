@@ -11,6 +11,11 @@ public class LOST : MonoBehaviour
         {
             Time.timeScale = 0;
             lostcanvas.SetActive(true);
+            
+        }
+        else
+        {
+            lostcanvas.SetActive(false);
         }
     }
 }

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
@@ -18,6 +19,11 @@ public class MenuManager : MonoBehaviour
     public GameObject CanvasRetryandQuit;
 
     public GameObject playerscene;
+
+    private void Start()
+    {
+        Time.timeScale = 1;
+    }
 
 
     public void SettingButton() // setting menu
@@ -62,6 +68,11 @@ public class MenuManager : MonoBehaviour
     {
         CanvasSettings.SetActive(true);
         CanvasVolume.SetActive(false);
+    }
+
+    public void playbutton()
+    {
+        SceneManager.LoadScene("playerscene");
     }
 
     

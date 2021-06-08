@@ -5,8 +5,8 @@ using UnityEngine;
 public class spawner : MonoBehaviour
 {
     public GameObject ball;
-    private float spawntime= 1.5f;
-    private float timer = 0;
+    public static float spawntime= 1.5f;
+    public static float timer = 0;
     private int height = 6;
 
     private void Update()
